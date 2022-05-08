@@ -1,0 +1,365 @@
+/*ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(102, 118, 197);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(206, 211, 227);
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+li a:hover {
+  background-color: rgb(178, 230, 244);
+  border: 2px blue;
+  border-radius: 2px;
+  color: rgb(102, 118, 197);
+}*/
+
+
+/*  #home2 {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 200px; 
+     height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    background-color: #f1f1f1; 
+    padding: 10px;
+    flex: 33%;
+  }
+  .flex-item-mid {
+    background-color: #ca7b7b;
+    padding: 10px;
+    flex: 33%;
+  }
+  
+  .flex-item-right {
+    background-color: dodgerblue;
+    padding: 10px;
+    flex: 33%;
+    
+  }*/
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+/* @media (max-width: 500px) {
+
+  .flex-item-right,
+  .flex-item-left,
+  .flex-item-mid {
+    flex: 100%;
+  }
+} */
+
+/*body {
+  background-image: url(https://images.news18.com/ibnlive/uploads/2021/05/1621502901_wildlife1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+/*.home {
+  font-size: 5rem;
+}
+
+.home p {
+  display: flex;
+  margin-left: 60%;
+  margin-top: 5%;
+  color: rgb(42, 66, 87);
+}
+
+.button1 {
+  display: flex;
+  font-size: 2.5rem;
+  margin-left: 60%;
+  margin-top: 2%;
+  margin-right: 20%;
+  text-decoration: none;
+  letter-spacing: 2px;
+  outline: 2px solid rgb(42, 66, 87);
+  padding: 30px 30px;
+  color: rgb(42, 66, 87);
+  overflow: hidden;
+  transition: color 1s;
+  border-radius: 1rem;
+}
+
+.button1:hover {
+  color: aqua;
+  background-color: rgb(42, 66, 87);
+}
+.h-primary{
+  font-size: 30px;
+}
+#home2{
+  font-size: 20px;
+  margin-top: 130px;
+  border: 1px solid black;
+  background-color: lightblue;*/
+
+ 
+
+  /* background-image: url(https://media.istockphoto.com/vectors/save-wildlife-theme-with-penquin-vector-id496627764?s=612x612);
+  */
+
+/*.flex-container{
+  display: grid;
+  grid-gap: 5px;
+    margin: 30px 30px;
+  padding: 30px 30px;
+}
+ 
+.box1{
+    border: 2px solid red;
+    border-radius: 23px;
+    background-color: #d9cdd0;
+}
+.box2{
+    border: 2px solid red;
+    display: block;
+    height: 160px;
+    margin: 30px;
+    padding: 32px;
+    border-radius: 23px;
+    background-color: #d9cdd0;
+}
+.box3{
+    border: 2px solid red;
+    display: block;
+    height: 160px;
+    margin: 30px;
+    padding: 32px;
+    border-radius: 23px;
+    background-color: #d9cdd0;
+}
+.h-secondary{
+  justify-content: center;
+  text-align: center;
+}*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-image: url(https://images.news18.com/ibnlive/uploads/2021/05/1621502901_wildlife1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+nav {
+  background-color: rgb(102, 118, 197);
+  padding: 0 10px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.menu,
+.submenu {
+  list-style-type: none;
+}
+.logo {
+  font-size: 20px;
+  padding: 7.5px 10px 7.5px 0;
+}
+.item {
+  padding: 10px;
+}
+.item.button {
+  padding: 9px 5px;
+}
+.item:not(.button) a:hover,
+.item a:hover::after {
+  color: #ccc;
+}
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+.item.button {
+  order: 2;
+}
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+.button.secondary {
+  /* divider between buttons and menu links */
+  border-bottom: 1px #444 solid;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 12px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: white;
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: #111;
+  border-radius: 3px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+  /* Button up from tablet screen */
+  .menu li.button a {
+    padding: 10px 15px;
+    margin: 5px 0;
+  }
+  .button a {
+    background: #0080ff;
+    border: 1px royalblue solid;
+  }
+  .button.secondary {
+    border: 0;
+  }
+  .button.secondary a {
+    background: transparent;
+    border: 1px #0080ff solid;
+  }
+  .button a:hover {
+    text-decoration: none;
+  }
+  .button:not(.secondary) a:hover {
+    background: royalblue;
+    border-color: darkblue;
+  }
+}
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .button {
+    order: 2;
+  }
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: #111;
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+}
+
+
+.button1 {
+  font-size: 2.5rem;
+  text-decoration: none;
+  letter-spacing: 2px;
+  outline: 2px solid rgb(42, 66, 87);
+  padding: 10px 10px;
+  color: rgb(42, 66, 87);
+/*  overflow: hidden;*/
+  transition: color 1s;
+  border-radius: 1rem;
+}
+
+.button1:hover {
+  color: aqua;
+  background-color: rgb(42, 66, 87);
+}
+
+.my_text{
+  font-family: 'Open Sans', sans-serif;
+  font-size:      75px;
+}
+
+.box1{
+    border: 2px solid red;
+    border-radius: 23px;
+    background-color: #d9cdd0;
+}

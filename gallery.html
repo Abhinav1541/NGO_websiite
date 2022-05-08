@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+body{
+    background-color: wheat;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  background-color: wheat ;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="row">
+        <div class="column">
+          <img src="T9pAoHrNYgc75CNoyB7CHk.jpg" alt="Snow" style="width:100%">
+        </div>
+      
+        <div class="column">
+          <img src="ST1907b_Mz.jpg" alt="Mountains" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="leopard-3229940__340.jpg" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+    
+</body>
+</html>
